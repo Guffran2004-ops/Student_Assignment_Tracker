@@ -3,8 +3,8 @@ from pymongo import MongoClient
 from uuid import uuid4
 app = Flask(__name__)
 client = MongoClient("mongodb+srv://guffranjgshaik_db_user:zFMHm7NoVSVvHUky@studentattendance.u8cdbrl.mongodb.net/?appName=StudentAttendance")
-studentdb = client["StudentData"]
-studentassignmentcollection = studentdb["StudentAssignment"]
+studentdb = client["student_data"]
+studentassignmentcollection = studentdb["personal_info"]
 
 @app.post("/students")
 def add_student():
