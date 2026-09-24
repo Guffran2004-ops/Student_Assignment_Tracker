@@ -4,7 +4,7 @@ from uuid import uuid4
 app = Flask(__name__)
 client = MongoClient("mongodb+srv://guffranjgshaik_db_user:zFMHm7NoVSVvHUky@studentattendance.u8cdbrl.mongodb.net/?appName=StudentAttendance")
 studentdb = client["student_data"]
-studentassignmentcollection = studentdb["personal_info"]
+studentassignmentcollection = studentdb["Personal_info"]
 
 @app.post("/students")
 def add_student():
